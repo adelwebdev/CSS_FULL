@@ -32,7 +32,7 @@ h1 {
 body {
   /* background: wheat; */
   background: url(./img1.jpg) no-repeat center/cover;
-  height: 300vh;
+  height: 350vh;
 }
 
 main {
@@ -48,7 +48,8 @@ main {
 }
 
 .positioning,
-.flexbox {
+.flexbox,
+.grid {
   background-color: rgba(219, 243, 182, 0.705);
   height: 200px;
   width: 50%;
@@ -104,4 +105,59 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.grid {
+  width: 80%;
+  height: 300px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "i1 i2"
+    "ta ta"
+    "bt bt";
+}
+
+input,
+textarea {
+  margin: 5px;
+  height: 50px;
+  border: 1px solid darkblue;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  resize: none;
+}
+
+#firstname {
+  grid-area: i1;
+}
+#surname {
+  grid-area: i2;
+}
+#textarea {
+  grid-area: ta;
+}
+
+input[type="submit"] {
+  grid-area: bt;
+  cursor: pointer;
+  background: cyan;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background: greenyellow;
+  color: white;
 }
