@@ -91,4 +91,17 @@ h2 {
 
 ul {
   display: flex;
+  justify-content: space-around;
+}
+
+li {
+  list-style-type: none;
+  font-size: 0.7rem;
+  height: 160px;
+  width: 100px;
+  background-color: rgba(109, 225, 230, 0.76);
+  /* Pour centrer verticalment  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
