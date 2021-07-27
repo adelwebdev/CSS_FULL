@@ -107,6 +107,10 @@ li {
   justify-content: center;
 }
 
+.imgGrid {
+  text-align: center;
+}
+
 .grid {
   width: 80%;
   height: 300px;
@@ -160,4 +164,22 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: greenyellow;
   color: white;
+}
+
+@media screen and (max-width: 880px) {
+  .grid-container {
+    display: block;
+  }
+}
+@media screen and (max-width: 780px) {
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "i1"
+      "i2"
+      "ta"
+      "bt";
+  }
 }
