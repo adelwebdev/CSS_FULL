@@ -1,0 +1,76 @@
+:root {
+  --color1: #ddd8cc;
+  --color2: pink;
+  --color3: #393b4b;
+  --color4: rgb(18, 19, 19);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: salmon;
+  background: url(./bg2.jpg) no-repeat center/cover;
+  height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: var(--color1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  background: rgba(0, 0, 0, 0.308);
+  width: calc(100% - 50px);
+  padding: 20px 20px 6px;
+  box-shadow: 0px -2px 9px 5px #8faf5a;
+  border-radius: 5px;
+  backdrop-filter: blur(5px);
+}
+.card:before {
+  content: "\2730";
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  font-size: 2.4rem;
+}
+h1 {
+  margin-bottom: 24px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.ploygon-container {
+  filter: drop-shadow(-1px 10px 3px var(--color2));
+  /* Si le parent est en grid */
+  place-self: center left;
+}
+
+.polygon {
+  clip-path: polygon(59% 8%, 93% 30%, 75% 79%, 23% 66%, 16% 28%);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(214, 215, 79, 0.8939950980392157) 49%,
+    rgba(0, 255, 105, 1) 97%
+  );
+  height: 100px;
+  width: 100px;
+}
+.polygon:after {
+  content: "Un texte";
+  position: absolute;
+  color: var(--color3);
+  background: var(--color4);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  padding: 4px;
+  text-align: center;
+}
