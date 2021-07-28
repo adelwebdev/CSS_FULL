@@ -146,3 +146,31 @@ input [type="text"]::placeholder {
   color: var(--color3);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+button {
+  cursor: pointer;
+  background: var(--color2);
+  border: none;
+  font-size: 1.3rem;
+  padding: 10px 20px;
+  border-radius: 150px;
+  margin: 0 auto;
+  /* pour centrer un button: display: block (c la raison qd parfois ca centre pas) */
+  display: block;
+  /* pour transition en entrer et en sortie faut copier dans "button" (comme ici) */
+  transition: 0.4s;
+}
+button:hover {
+  letter-spacing: 3px;
+}
+a {
+  /* color: var(--color4); */
+  color: green;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+a:visited {
+  /* color: var(--color1); */
+  color: yellow;
+}
