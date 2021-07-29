@@ -62,7 +62,6 @@ h1::after {
 }
 
 /* !!!!!!!!VERY IMPORTANT!!!!! POUR FAIRE DES ANIMATIONS!!!!!!!! */
-
 @keyframes h1anim {
   100% {
     transform: translateX(-50%) scaleX(1);
@@ -238,6 +237,7 @@ button:active {
 button:hover + a,
 a:hover {
   opacity: 1;
+  visibility: visible;
   transform: translateY(0);
 }
 
@@ -248,6 +248,7 @@ a {
   text-decoration: none;
   text-align: center;
   opacity: 0.4;
+  visibility: hidden;
   transform: translateY(20px);
   transition: 0.3s;
 }
@@ -274,12 +275,12 @@ img {
   10% {
     top: 6%;
     left: 30%;
-    transform: rotate(90deg);
+    transform: rotate(95deg);
   }
   20% {
     top: 9%;
     left: 60%;
-    transform: rotate(90deg);
+    transform: rotate(60deg);
   }
   30% {
     top: 0%;
@@ -289,32 +290,32 @@ img {
   40% {
     top: 20%;
     left: 120%;
-    transform: rotate(90deg);
+    transform: rotate(110deg);
   }
   50% {
     top: 50%;
     left: 80%;
-    transform: rotate(90deg);
+    transform: rotate(323deg);
   }
   60% {
     top: 90%;
     left: 90%;
-    transform: rotate(90deg);
+    transform: rotate(256deg);
   }
   70% {
     top: 110%;
     left: 50%;
-    transform: rotate(90deg);
+    transform: rotate(237deg);
   }
   80% {
     top: 85%;
     left: 30%;
-    transform: rotate(90deg);
+    transform: rotate(323deg);
   }
   90% {
     top: 50%;
     left: 15%;
-    transform: rotate(90deg);
+    transform: rotate(350deg);
   }
   100% {
     top: 2%;
